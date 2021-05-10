@@ -1,0 +1,20 @@
+package enums;
+
+public enum Skills {
+    MIGHT,
+    ENDURANCE,
+    MELEE,
+    CRAFTING,
+    STEALTH,
+    SLEIGHTOFHAND,
+    MOVE,
+    MARKSMANSHIP,
+    SCOUTING,
+    LORE,
+    SURVIVAL,
+    INSIGHT,
+    MANIPULATION,
+    HEALING,
+    ANIMALHANDLING,
+    PERFORMANCE;
+}
