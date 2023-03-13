@@ -1,6 +1,6 @@
 package enums;
 
-public enum GearFeatures {
+public enum GearFeature {
     BLUNT,
     POINTED,
     EDGED,
@@ -14,5 +14,5 @@ public enum GearFeatures {
     //Immobile visar att bäraren har -2move i sådan rustning
     IMMOBILE,
     //Kedjerustningar ger rustning 3 mot pilar och stötar
-    CHAIN;
+    CHAIN
 }

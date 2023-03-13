@@ -1,7 +1,7 @@
 package gear;
 
 import characters.Creature;
-import enums.GearFeatures;
+import enums.GearFeature;
 
 import java.util.HashSet;
 
@@ -9,7 +9,7 @@ public class Armor extends Gear{
     int idA;
     static int counterA=0;
 
-    public Armor(int bonus, enums.GearName name, int price, HashSet<GearFeatures> feat) {
+    public Armor(int bonus, enums.GearName name, int price, HashSet<GearFeature> feat) {
         super(bonus, name, price, feat);
         idA=counterA++;
     }

@@ -1,7 +1,7 @@
 package gear;
 
 import characters.Creature;
-import enums.GearFeatures;
+import enums.GearFeature;
 
 import java.util.HashSet;
 
@@ -14,7 +14,7 @@ public class Weapon extends Gear{
 
     public Weapon(enums.GearName name, int price,
                   int bonus, int grip, int damage,
-                  int reach, HashSet<GearFeatures> feat) {
+                  int reach, HashSet<GearFeature> feat) {
         super (bonus, name, price, feat);
         this.grip = grip;
         this.damage = damage;

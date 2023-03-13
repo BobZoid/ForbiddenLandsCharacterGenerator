@@ -1,15 +1,17 @@
 package characters;
 
+import enums.Stat;
+
 import java.util.HashMap;
 
 public abstract class Creature {
-    private HashMap<enums.Stats, Integer> stats = new HashMap<>();
+    private HashMap<Stat, Integer> stats = new HashMap<>();
 
-    public HashMap<enums.Stats, Integer> getStats() {
+    public HashMap<Stat, Integer> getStats() {
         return stats;
     }
 
-    public void setStats(HashMap<enums.Stats, Integer> stats) {
+    public void setStats(HashMap<Stat, Integer> stats) {
         this.stats = stats;
     }
 
@@ -17,8 +19,8 @@ public abstract class Creature {
     }
 
     public void addStats() {
-        stats.put(enums.Stats.STY, 0);
-        stats.put(enums.Stats.SMI, 0);
+        stats.put(Stat.STY, 0);
+        stats.put(Stat.SMI, 0);
 
     }
 

@@ -16,10 +16,10 @@ public class CharacterTest {
     @Test
     public void createPC() {
         PC pc = new PC(10, Race.DWARF);
-        pc.setArch(Archetypes.FIGHTER);
-        pc.setArchSkills(new HashSet<Skills>());
-        pc.getArchSkills().add(Skills.MELEE);
-        pc.getArchSkills().add(Skills.ENDURANCE);
+        pc.setArch(Archetype.FIGHTER);
+        pc.setArchSkills(new HashSet<Skill>());
+        pc.getArchSkills().add(Skill.MELEE);
+        pc.getArchSkills().add(Skill.ENDURANCE);
         pc.setEquipped(new ArrayList<Gear>());
         Weapon w = new Weapon(GearName.BATTLEAXE, 1, 1, 1, 1, 1, new HashSet<>());
         pc.getEquipped().add(w);
@@ -28,14 +28,14 @@ public class CharacterTest {
         list.add(r);
         pc.setInventory(list);
         pc.setName("Bosse");
-        HashMap<Skills, Integer> skills = new HashMap<>();
-        skills.put(Skills.MELEE, 4);
-        skills.put(Skills.ENDURANCE, 3);
+        HashMap<Skill, Integer> skills = new HashMap<>();
+        skills.put(Skill.MELEE, 4);
+        skills.put(Skill.ENDURANCE, 3);
         pc.setSkills(skills);
         pc.setWallet(100);
-        pc.getTalents().put(Talents.AXEFIGHTER, 2);
+        pc.getTalents().put(Talent.AXEFIGHTER, 2);
 
-        assertEquals(Archetypes.FIGHTER, pc.getArch());
+        assertEquals(Archetype.FIGHTER, pc.getArch());
         assertEquals(2, pc.getArchSkills().size());
         assertEquals(1, pc.getEquipped().size());
         assertEquals(1, pc.getInventory().size());
@@ -44,9 +44,9 @@ public class CharacterTest {
         assertEquals(2, pc.getTalents().size());
         assertEquals(100, pc.getWallet());
 
-        assertEquals(3, pc.getStats().get(Stats.STY));
-        assertEquals(2, pc.getStats().get(Stats.SMI));
-        assertEquals(2, pc.getStats().get(Stats.INT));
-        assertEquals(2, pc.getStats().get(Stats.KAR));
+        assertEquals(3, pc.getStats().get(Stat.STY));
+        assertEquals(2, pc.getStats().get(Stat.SMI));
+        assertEquals(2, pc.getStats().get(Stat.INT));
+        assertEquals(2, pc.getStats().get(Stat.KAR));
     }
 }

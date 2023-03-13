@@ -41,5 +41,5 @@ public enum GearName {
     SHORTBOW,
     LONGBOW,
     LIGHTCROSSBOW,
-    HEAVYCROSSBOW;
+    HEAVYCROSSBOW
 }

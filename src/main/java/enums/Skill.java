@@ -1,6 +1,6 @@
 package enums;
 
-public enum Skills {
+public enum Skill {
     MIGHT,
     ENDURANCE,
     MELEE,
@@ -16,5 +16,5 @@ public enum Skills {
     MANIPULATION,
     HEALING,
     ANIMALHANDLING,
-    PERFORMANCE;
+    PERFORMANCE
 }

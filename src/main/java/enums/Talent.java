@@ -1,6 +1,6 @@
 package enums;
 
-public enum Talents {
+public enum Talent {
     ADAPTIVE,
     INNERPEACE,
     PSYCHICPOWER,

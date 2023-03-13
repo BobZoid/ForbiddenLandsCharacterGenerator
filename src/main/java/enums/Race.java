@@ -8,7 +8,7 @@ public enum Race {
     DWARF,
     GOBLIN,
     ORC,
-    BEASTMAN,
+    WOLFKIN,
     MONSTER,
-    NONE;
+    NONE
 }

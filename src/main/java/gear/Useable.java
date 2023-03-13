@@ -1,4 +1,4 @@
-package engine;
+package gear;
 
 import characters.Creature;
 

@@ -1,6 +1,6 @@
 package enums;
 
-public enum Archetypes {
+public enum Archetype {
     DRUID,
     FIGHTER,
     HUNTER,
@@ -8,5 +8,5 @@ public enum Archetypes {
     PEDDLER,
     RIDER,
     ROGUE,
-    SORCERER;
+    SORCERER
 }

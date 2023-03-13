@@ -1,13 +1,13 @@
 package gear;
 
 import characters.Creature;
-import enums.GearFeatures;
+import enums.GearFeature;
 
 import java.util.HashSet;
 
 public class Helmet extends Gear{
 
-    public Helmet(int bonus, enums.GearName name, int price, HashSet<GearFeatures> feat) {
+    public Helmet(int bonus, enums.GearName name, int price, HashSet<GearFeature> feat) {
         super(bonus, name, price, feat);
     }
 

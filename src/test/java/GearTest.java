@@ -1,5 +1,5 @@
 import gear.*;
-import enums.GearFeatures;
+import enums.GearFeature;
 import enums.GearName;
 import org.junit.jupiter.api.Test;
 
@@ -26,8 +26,8 @@ public class GearTest {
 
     @Test
     public void createWeapon() {
-        HashSet<GearFeatures> hs = new HashSet<>();
-        hs.add(GearFeatures.IMMOBILE);
+        HashSet<GearFeature> hs = new HashSet<>();
+        hs.add(GearFeature.IMMOBILE);
         Weapon w = new Weapon(GearName.BATTLEAXE, 1, 2, 3, 4, 5, hs);
         assertTrue(w instanceof Weapon);
         assertEquals(GearName.BATTLEAXE, w.getName());
@@ -41,9 +41,9 @@ public class GearTest {
 
     @Test
     public void createArmor() {
-        HashSet<GearFeatures> hs = new HashSet<>();
-        hs.add(GearFeatures.POINTED);
-        hs.add(GearFeatures.LIGHT);
+        HashSet<GearFeature> hs = new HashSet<>();
+        hs.add(GearFeature.POINTED);
+        hs.add(GearFeature.LIGHT);
         Armor w = new Armor(20, GearName.LEATHERARMOR, 10, hs);
         assertTrue(w instanceof Armor);
         assertEquals(GearName.LEATHERARMOR, w.getName());
@@ -54,7 +54,7 @@ public class GearTest {
 
     @Test
     public void createRanged() {
-        HashSet<GearFeatures> hs = new HashSet<>();
+        HashSet<GearFeature> hs = new HashSet<>();
         RangedWeapon r = new RangedWeapon(1, GearName.FALCHION, 2, 3, 4, 5, 6, hs);
         assertTrue( r instanceof RangedWeapon);
         assertEquals(GearName.FALCHION, r.getName());
@@ -68,8 +68,8 @@ public class GearTest {
 
     @Test
     public void createHelmet() {
-        HashSet<GearFeatures> hs = new HashSet<>();
-        hs.add(GearFeatures.CROSSBOW);
+        HashSet<GearFeature> hs = new HashSet<>();
+        hs.add(GearFeature.CROSSBOW);
         Helmet h = new Helmet(11, GearName.CLOSEDHELMET, 12, hs);
         assertTrue(h instanceof Helmet);
         assertEquals(11, h.getBonus());

@@ -1,6 +1,6 @@
 package gear;
 
-import engine.Useable;
+import enums.GearFeature;
 import enums.GearName;
 
 import java.util.HashSet;
@@ -11,7 +11,7 @@ public abstract class Gear implements Useable {
     private int bonus;
     //price är alltid i kopparmynt. *10 för SM och *100 för GM
     private int price;
-    private HashSet<enums.GearFeatures> features = new HashSet<>();
+    private HashSet<GearFeature> features = new HashSet<>();
     int id;
     static int counter=0;
 
@@ -22,7 +22,8 @@ public abstract class Gear implements Useable {
         id=counter++;
     }
 
-    public Gear(int bonus, enums.GearName name, int price, HashSet<enums.GearFeatures> feat) {
+
+    public Gear(int bonus, enums.GearName name, int price, HashSet<GearFeature> feat) {
         this.price=price;
         this.name=name;
         this.bonus = bonus;
@@ -42,11 +43,11 @@ public abstract class Gear implements Useable {
         return price;
     }
 
-    public HashSet<enums.GearFeatures> getFeatures() {
+    public HashSet<GearFeature> getFeatures() {
         return features;
     }
 
-    public void setFeatures(HashSet<enums.GearFeatures> features) {
+    public void setFeatures(HashSet<GearFeature> features) {
         this.features = features;
     }
 
@@ -108,6 +109,11 @@ public abstract class Gear implements Useable {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "\n" + name;
     }
 }
 

@@ -1,8 +1,8 @@
 package enums;
 
-public enum Stats {
+public enum Stat {
     INT,
     KAR,
     STY,
-    SMI;
+    SMI
 }
